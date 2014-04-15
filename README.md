@@ -1,7 +1,7 @@
 == sippy ==
 =========
 
-sippy is a minimal and elegant Wordpress Theme based on ThemeKraft Starter Theme. Fully responsive of course and simply awesome.
+sippy is a minimal and elegant Wordpress Theme based on <a href="https://github.com/Themekraft/_tk/">ThemeKraft Starter Theme</a>. Fully responsive of course and simply awesome.
 
 Check out a real life demo at http://blog.thomasveit.com
 
