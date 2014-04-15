@@ -1,0 +1,630 @@
+/*
+Theme Name: sippy
+Theme URI: http://www.thomasveit.com
+Author: Thomas Veit
+Author URI: http://www.thomasveit.com
+Description: Simple and minimalitic blog theme with great typography for writers
+Version: 1.0
+License: GNU General Public License
+Tags: simple, minimal, typography, responsive
+
+This theme, like WordPress, is licensed under the GPL.
+Based on ThemeKraft Starter Theme (https://github.com/Themekraft/_tk),
+and Twitter Bootstrap (http://getbootstrap.com/)
+*/
+
+/* Import Bootstrap and Fonts */
+@import url(includes/css/bootstrap-wp.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
+
+
+
+/* My Minimal WordPress Styling comes here */
+
+/* This is a small security for too long strings titles */
+body {
+    word-wrap: break-word;
+    background: #eeeeee;
+	font-family: 'Noto Serif',Georgia,'Times New Roman',serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #434343;
+	margin-top: 40px;
+	margin-bottom: 40px
+}
+
+
+.logoheader {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.logoheader i {
+	font-size: 32px;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	-webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.logo:hover {
+	-webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-ms-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+	transform: rotate(720deg);
+}
+
+.site-navigation {
+	display: none;
+}
+
+.page-header {
+	padding-bottom: 20px;
+}
+
+
+article { 
+	background: #f9f9f9;
+	padding: 50px 150px;
+	margin-bottom: 80px;
+}
+
+article header, .entry-content {
+	text-align: left;
+}
+
+p {
+	margin: 1em 0;
+	line-height: 1.8;
+	-webkit-font-smoothing: antialiased;
+	-moz-webkit-font-smoothing: antialiased;
+	-ms-webkit-font-smoothing: antialiased;
+	-o-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #404040;
+	font-weight: 900;
+	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	color: #404040;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+	text-decoration: underline;
+}
+a:hover {
+	color: #4eb0f0;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+	text-decoration: underline;
+}
+
+header a, .logoheader a {
+	color: #404040;
+	text-decoration: none;
+}
+
+header a:hover, .logoheader a:hover {
+	color: #4eb0f0;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+.entry-meta, .more-link {
+	font-weight: 900;
+	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-size: 1.6rem;
+}
+
+.more-link {
+	color: #414141;
+	text-decoration: none;
+}
+.more-link:hover {
+	color: #4eb0f0;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 44px;
+	font-size: 4.4rem;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+
+.meta-nav {
+	display: none;
+}
+
+.site-info {
+	text-align: center;
+}
+
+.pager li > a, .pager li > span {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	width: 50%;
+	padding: 30px 15px;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	font-weight: 400;
+	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+
+/* Images and wp-captions should always fit and be responsive */
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+img[class*="wp-image-"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	max-width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+.wp-caption.aligncenter {
+	margin-bottom: 10px;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+}
+.wp-caption .wp-caption-text {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* WP Gallery */
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.gallery dd {
+	margin: 0;
+}
+
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+/* Content */
+.main-content-inner {
+	padding-bottom: 1.5em;
+}
+
+
+/* Clearing */
+.clear {
+	clear: both;
+}
+
+
+/* Here some needed widget styles 
+ * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
+.widget { margin-bottom: 2em; }
+.widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
+
+/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
+ * Note: you can change the whole appearance of the search_form() function in our searchform.php */
+.widget_search .search-form input[type="submit"] { display: none; }
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
+ * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
+ .comment .children { margin-left: 1.5em; } 
+ 
+.comment-edit-link {
+	display: none;
+}
+
+#commentform label {
+	display: block;
+}
+
+#comments .page-header {
+	text-align: center;
+}
+
+#comment, input, button, select, textarea {
+	padding: 10px;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #434343;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.comment-content,
+.panel-default > .panel-heading,
+.panel-footer {
+	background: #f9f9f9;
+}
+
+.panel-default > .panel-heading,
+.panel-footer {
+	border: none;
+}
+
+.panel {
+	box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+}
+
+.panel-body {
+	padding: 0px 15px;
+}
+
+.comment-respond {
+	padding: 50px 150px;
+	background: #f9f9f9;
+	margin-bottom: 80px;
+}
+
+.comment-respond .alert,
+.comment-respond .form-allowed-tags {
+	display: none;
+}
+
+
+/* Post Formats - Quote */
+
+article.format-quote {
+	background: #fff;
+}
+
+article.format-quote h1 {
+	line-height: 54px;
+	line-height: 5.4rem;
+	text-align: center;
+}
+
+article.format-quote h2 {
+	text-align: center;
+	color: #d2d2d2;
+}
+
+article.format-quote a {
+	text-decoration: none;
+}
+
+.attachment-thumbnail {
+	border: 1px solid #cfcfcf!important;
+}
+
+.elastic-video {
+	position: relative;
+	padding-bottom: 55%;
+	padding-top: 15px;
+	height: 0;
+	overflow: hidden;
+}
+.elastic-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Buttons */
+
+.btn-primary {
+	background: #404040;
+	border-color: #404040;
+}
+
+.btn-primary:hover {
+	background: #4eb0f0;
+	border-color: #4eb0f0;
+}
+
+
+/* Overlay style */
+
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(78,176,240,0.9);
+	z-index: 1000;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(includes/images/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #434343;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+.overlay.close {
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+/* Media Queries */
+
+
+@media (max-width: 767px) {
+	body {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+	p {
+		line-height: 22px;
+		line-height: 2.2rem;
+	}
+
+	article, .comment-respond {
+		padding: 5% 5%;
+	}
+
+	h1, article.format-quote h1 {
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 30px;
+		line-height: 3.0rem;
+	}
+
+	article.format-quote h2 {
+		margin-top: 30px;
+	}
+
+	.main-content-inner {
+		padding-bottom: 0;
+	}
+
+	.page-header {
+		padding: 0px 0 20px 0;
+		margin: 0px 0 20px 0;
+	}
+
+	.entry-meta, .more-link, article.format-quote h2 {
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+
+	#comment, input, button, select, textarea {
+		width: 100%;
+	}
+
+
+}
+
+@media (min-width: 768px) {
+	article, .comment-respond {
+		padding: 50px 75px;
+	}
+}
+
+@media (min-width: 992px) {
+	article, .comment-respond {
+		padding: 50px 100px;
+	}
+}
+
+@media (min-width: 1200px) {
+	article, .comment-respond {
+		padding: 50px 150px;
+	}
+}
+
+
+/* 
+ == Infinite Scrolling by Jetpack ==
+ You can enable this cool feature by simply decommenting the lines below and make sure you use the same classes on the right place in your html.. 
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. 
+ * Older / Newer Posts Navigation (the pagination, must always be hidden), Theme Footer only when set to scrolling.. */ 
+
+
+.infinite-scroll .page-links, 
+.infinite-scroll.neverending .site-footer { 
+	display: none;
+}
+
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+
+.infinity-end.neverending .site-footer {
+	display: block;
+} 
+
+
+/* Hey, if you don't need my comments anymore, just delete me! :)  */  	
