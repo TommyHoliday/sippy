@@ -102,7 +102,8 @@ a {
 	-moz-transition: all .4s ease;
 	-o-transition: all .4s ease;
 	transition: all .4s ease;
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 1px dashed;
 }
 a:hover {
 	color: #4eb0f0;
@@ -110,12 +111,13 @@ a:hover {
 	-moz-transition: all .4s ease;
 	-o-transition: all .4s ease;
 	transition: all .4s ease;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 header a, .logoheader a {
 	color: #404040;
 	text-decoration: none;
+	border-bottom: none;
 }
 
 header a:hover, .logoheader a:hover {
@@ -125,23 +127,26 @@ header a:hover, .logoheader a:hover {
 
 nav a {
 	text-decoration: none;
+	border-bottom: none;
 }
 
 nav a:hover {
 	text-decoration: none;
 }
 
-.entry-meta, .more-link {
+.entry-meta, .entry-meta a, .more-link {
 	font-weight: 900;
 	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
 	text-transform: uppercase;
 	color: #d2d2d2;
 	font-size: 1.6rem;
+	border-bottom: none;
 }
 
 .more-link {
 	color: #414141;
 	text-decoration: none;
+	border-bottom: none;
 }
 .more-link:hover {
 	color: #4eb0f0;
@@ -198,6 +203,10 @@ footer {
 	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
+}
+
+footer a {
+	border-bottom: none;
 }
 
 
@@ -394,6 +403,7 @@ article.format-quote h2 {
 
 article.format-quote a {
 	text-decoration: none;
+	border-bottom: none;
 }
 
 .attachment-thumbnail {

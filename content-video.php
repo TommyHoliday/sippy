@@ -12,7 +12,7 @@
 		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<div class="entry-meta">
-			<?php the_time(get_option('date_format')); ?> &ndash; <?php echo comments_number( 'no comments', 'one comment', '% comments' ); ?>
+			<?php the_time(get_option('date_format')); ?> &ndash; <a href="<?php the_permalink(); ?>#comments" rel="bookmark"><?php echo comments_number( 'no comments', 'one comment', '% comments' ); ?></a>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
