@@ -331,6 +331,13 @@ object {
 	border-radius: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	-webkit-appearance: none;
+}
+
+.btn {
+	webkit-border-radius: 0;
+	moz-border-radius: 0;
+	border-radius: 0;
 }
 
 .comment-content,
