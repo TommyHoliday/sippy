@@ -467,6 +467,7 @@ article.format-quote a {
 	top: 50%;
 	font-size: 54px;
 	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
