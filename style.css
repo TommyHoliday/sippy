@@ -138,6 +138,10 @@ footer a {
 	border-bottom: 1px dashed;
 }
 
+footer a.homelink {
+	border-bottom: none;
+} 
+
 .entry-meta, .entry-meta a, .more-link {
 	font-weight: 900;
 	font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
