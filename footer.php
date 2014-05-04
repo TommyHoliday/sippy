@@ -21,8 +21,8 @@
 				<div class="site-info">
 					<a href="<?php echo home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/includes/images/logo.png" alt="Thomas Veit Logo"></a>
 					<br /> <br />
-					This minimal wordpress theme is called <strong>&laquo;sippy&raquo;</strong> and is designed by me, Thomas. <br />
-					I'll soon release it for free. Stay tuned.
+					This minimal wordpress theme is called <strong>&laquo;sippy&raquo;</strong> and is designed by Thomas Veit. <br />
+					You can <a href="http://blog.thomasveit.com/sippy-free-wordpress-theme/">download this theme</a> for free.
 				</div><!-- close .site-info -->
 			
 			</div>	
