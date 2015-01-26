@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
 	}); 
 
 	jQuery(document).keyup(function(e) {
-  		if (e.keyCode == 27) { jQuery('.vbox-close').trigger("click"); }   // esc
+  		if (e.keyCode == 27) { jQuery('.vbox-close').trigger("click");	 }   // esc
 	});
 
 

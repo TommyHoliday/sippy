@@ -5,6 +5,8 @@
  * @package _tk
  */
 
+require dirname(__FILE__) .'/framework/bootstrap.php';
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
